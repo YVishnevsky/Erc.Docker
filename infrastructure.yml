@@ -38,15 +38,15 @@ services:
         
   rabbitmq:
       image: rabbitmq:managment
-        restart: always
-        container_name: ztoec-rabbitmq
-        environment:
+      restart: always
+      container_name: ztoec-rabbitmq
+      environment:
         - RABBITMQ_DEFAULT_VHOST=ztoec
-        ports:
+      ports:
         - 15672:15672
         - 5671:5671
         - 5672:5672
-        volumes:
+      volumes:
          - data-rabbitmq:/var/lib/rabbitmq
         
   elasticsearch:
