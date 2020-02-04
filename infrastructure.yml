@@ -39,7 +39,7 @@ services:
         - postgres
         
   rabbitmq:
-      image: rabbitmq:managment
+      image: rabbitmq:management
       restart: always
       container_name: ztoec-rabbitmq
       environment:
